@@ -1,14 +1,17 @@
 @use "../abstracts/variables" as *;
-@use '../abstracts/mixins' as *;
 
 .section-faq {
-    padding: 2rem 0rem;
-    background: linear-gradient(
-        rgba(250, 250, 250, 1), 
-        rgba(244, 244, 249, 0.6)
-    ),
-    url("/src/assets/images/faq.avif");
-    background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 0% 60%;
+  background: $color-gray;
+  padding: 6rem 2rem;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 4rem 1.25rem;
+  }
+
+  .heading-secondary {
+    @media (max-width: 520px) {
+      font-size: 1.5rem;
+    }
+  }
 }

@@ -1,32 +1,47 @@
 @use "../abstracts/variables" as *;
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    // font-weight: 400;
-    // line-height: 1.7;
+  font-family: $font-body;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-heading;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .heading-primary {
-    text-transform: uppercase;
-    font-size: 5rem;
-    color: $color-white;
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1;
+  color: $color-light;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.9);
 }
 
 .heading-secondary {
-    font-size: 4rem;
-    font-weight: 700;
-
-    // background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    background: linear-gradient(to right, #A896D9, #4F3C82, #FF4F81);
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    // animation: animate-gradient 2.5s linear infinite;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 700;
+  color: $color-light;
+  margin-bottom: 0.75rem;
 }
 
 .paragraph {
-    font-size: 1.6rem;
-    color: $color-text;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: $color-text-softer;
+}
+
+.section-tag {
+  display: inline-block;
+  background: rgba($color-purple, 0.15);
+  color: $color-purple-light;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 0.4rem 0.9rem;
+  border-radius: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  font-family: $font-body;
 }

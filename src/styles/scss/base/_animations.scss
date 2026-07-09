@@ -1,37 +1,14 @@
 @keyframes floating {
-    0% {
-        transform: translateY(-5px);
-    }
-    50% {
-        transform: translateY(5px);
-    }
-    100% {
-        transform: translateY(-5px);
-    }
+  0%, 100% { transform: translateY(-5px); }
+  50% { transform: translateY(5px); }
 }
 
-@keyframes wave {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-7px);
-        background-position: 200%;
-    }
+@keyframes pulse {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
 }
 
-@keyframes appearBottom {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes animate-gradient {
-    to {
-        background-position: 200%;
-    }
+@keyframes load {
+  from { width: 0; }
+  to { width: 100%; }
 }

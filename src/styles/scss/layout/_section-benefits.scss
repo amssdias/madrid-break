@@ -1,42 +1,24 @@
 @use "../abstracts/variables" as *;
 
 .section-benefits {
-    padding: 4rem 0rem;
+  background: $color-gray;
+  padding: 6rem 2rem;
 
-    background-color: $color-bg;
+  @media (max-width: 768px) {
+    padding: 4rem 1.25rem;
+  }
 
-    &__header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  &__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
 
-        & h2 {
-            text-align: center;
-            
-            & span {
-                display: inline-block;
-                animation: wave 2s ease-in-out infinite;
-
-                background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-                background-size: 200%;
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-            @for $i from 1 through 30 {
-                & span:nth-child(#{$i}) {
-                    animation-delay: $i * 0.1s;
-                }
-            }
-        }
-
-    }
-
-    &__subtitle {
-        font-size: 1.6rem;
-        color: $color-text-light;
-    }
-
+  &__subtitle {
+    font-size: 0.95rem;
+    color: $color-text-muted;
+    font-weight: 300;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
 }

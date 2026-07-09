@@ -12,14 +12,15 @@
 @use "./components/card";
 @use "./components/faq";
 @use "./components/testimonials";
+@use "./components/preloader";
+@use "./components/floating-cta";
 
-@use "./layout/header";
 @use "./layout/nav";
+@use "./layout/header";
+@use "./layout/section-intro";
+@use "./layout/section-benefits";
+@use "./layout/section-testimonials";
+@use "./layout/section-faq";
+@use "./layout/section-contact";
 @use "./layout/footer";
 @use "./layout/grid";
-@use "./layout/section-benefits";
-@use "./layout/section-classes";
-@use "./layout/section-faq";
-@use "./layout/section-final-cta";
-@use "./layout/section-intro";
-@use "./layout/section-testimonials";

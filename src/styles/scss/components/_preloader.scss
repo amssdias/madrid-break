@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as *;
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: $color-dark;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: opacity 0.5s ease;
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &-text {
+    font-family: $font-heading;
+    font-size: 2rem;
+    color: $color-purple-light;
+    animation: pulse 1.2s infinite alternate;
+  }
+
+  &-bar {
+    width: 120px;
+    height: 3px;
+    background: #222;
+    border-radius: 3px;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 100%;
+      background: $color-purple-light;
+      animation: load 1s ease-in-out infinite alternate;
+    }
+  }
+}

@@ -1,31 +1,60 @@
 @use "../abstracts/variables" as *;
 
 .btn {
-    border: 1px solid $color-white;
-    padding: 1.5rem 3rem;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2rem;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  font-family: $font-body;
 
-    transition: 0.3s;
+  &-primary {
+    background: $color-purple;
+    color: #fff;
 
     &:hover {
-        transform: translateY(-0.4rem);
+      background: $color-purple-light;
+      transform: translateY(-2px);
     }
+  }
 
-    &-cta {
-        background-color: $color-accent-green;
-        border: 1px solid $color-accent-green;
-    }
+  &-gold {
+    background: $color-gold;
+    color: $color-dark;
 
-    &-primary {
-        background-color: $color-primary-dark;
-        border: 1px solid $color-primary-dark;
+    &:hover {
+      background: #e5bc3c;
+      transform: translateY(-2px);
     }
+  }
 
-    &__icon {
-        width: 2rem;
+  &-outline {
+    background: transparent;
+    color: $color-text;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    &:hover {
+      border-color: $color-gold;
+      color: $color-gold;
     }
+  }
+
+  &-cta {
+    background: $color-green;
+    color: #fff;
+    border: 1px solid $color-green;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  &__icon { width: 2rem; }
 }

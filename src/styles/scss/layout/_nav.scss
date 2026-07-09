@@ -1,10 +1,141 @@
-.nav {
+@use "../abstracts/variables" as *;
 
-    padding: 2rem;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 2.5rem;
+  transition: all 0.3s;
 
-    & h2 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        color: white;
+  &.scrolled {
+    background: rgba($color-dark, 0.88);
+    backdrop-filter: blur(14px);
+    padding: 0.8rem 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  &-brand {
+    font-family: $font-heading;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: $color-purple-light;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    i { color: $color-gold; }
+  }
+
+  &-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+
+    a {
+      color: $color-text;
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      position: relative;
+      padding: 0.3rem 0;
+      transition: color 0.3s;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $color-purple-light;
+        transition: width 0.3s;
+      }
+
+      &:hover {
+        color: $color-purple-light;
+        &::after { width: 100%; }
+      }
     }
+  }
+
+  &-cta {
+    background: $color-purple;
+    color: #fff !important;
+    padding: 0.55rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    &:hover {
+      background: $color-purple-light;
+      transform: translateY(-1px);
+    }
+
+    &::after { display: none; }
+  }
+
+  &-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: $color-text;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    &-links { display: none; }
+    &-toggle { display: block; }
+  }
+}
+
+// Mobile nav
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 5, 0.97);
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  transform: translateY(-100%);
+  transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+
+  &.open { transform: translateY(0); }
+
+  a {
+    color: $color-text;
+    font-family: $font-heading;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+
+    &:hover { color: $color-purple-light; }
+  }
+
+  &-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: $color-text;
+    font-size: 2rem;
+    cursor: pointer;
+  }
 }

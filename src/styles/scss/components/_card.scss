@@ -1,74 +1,66 @@
 @use "../abstracts/variables" as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/mixins" as *;
 
 .cards-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 20% 20% 20%;
-    grid-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
 
-    justify-content: center;
-
-    padding: 4rem 15rem;
-
-    @include respond(tab-land) {
-		padding: 4rem 5rem;
-        grid-template-columns: 25% 25% 25%;
-	}
-
-    @include respond(tab-port) {
-		padding: 4rem 5rem;
-        grid-template-columns: 30% 30% 30%;
-	}
-
-    
-    @include respond(phone) {
-		padding: 4rem 5rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-	}
+  @media (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
-    list-style-type: none;
+  list-style-type: none;
+  background: $color-dark;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  transition: transform 0.3s, border-color 0.3s;
 
-    background-color: $color-bg-light;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 0.75rem;
+  &:hover {
+    transform: translateY(-6px);
+    border-color: $color-purple-light;
+  }
 
-    transition: 0.2s;
+  &__body {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-    }
+  &__icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: 0 auto 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    &__body {
-        width: 100%;
-        padding: 2rem;
+    svg { width: 1.4rem; height: 1.4rem; }
+  }
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+  // Icon bg colors
+  &:nth-child(1) .card__icon { background: rgba($color-purple, 0.2); }
+  &:nth-child(2) .card__icon { background: rgba($color-green, 0.2); }
+  &:nth-child(3) .card__icon { background: rgba($color-gold, 0.2); }
+  &:nth-child(4) .card__icon { background: rgba($color-accent, 0.2); }
+  &:nth-child(5) .card__icon { background: rgba($color-purple, 0.2); }
+  &:nth-child(6) .card__icon { background: rgba($color-green, 0.2); }
 
-    &__icon {
-        // width: 10rem;
-        width: 50%;
-    }
+  &__title {
+    font-size: 1.05rem;
+    color: $color-light;
+    margin-bottom: 0.6rem;
+  }
 
-    &__title {
-        color: $color-text-dark;
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-
-    &__text {
-        color: $color-text-light;
-        text-align: center;
-        font-size: 1.6rem;
-    }
-
+  &__text {
+    font-size: 0.9rem;
+    color: $color-text-dim;
+    line-height: 1.6;
+  }
 }

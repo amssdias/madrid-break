@@ -1,38 +1,61 @@
 @use "../abstracts/variables" as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/mixins" as *;
 
-.header {
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+
+  @media (max-width: 768px) { min-height: 85vh; }
+
+  &-content {
     position: relative;
-    height: 95vh; // full screen height
+    z-index: 2;
+    padding: 2rem;
+    max-width: 780px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease 0.4s, transform 1s ease 0.4s;
 
-
-    &-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80%;
-
-        @include respond(tab-land) {
-            width: 100%;
-        }
-
-        & h1 {
-            text-align: center;
-        }
-
-        & p {
-            color: rgba($color-white, 0.8);
-            font-size: 1.6rem;
-            line-height: 2rem;
-            font-weight: 0;
-            text-align: center;
-
-            width: 70%;
-        }
-
-        &__cta {
-            border: 1px solid white;
-        }
+    .hero.loaded & {
+      opacity: 1;
+      transform: translateY(0);
     }
+
+    h1 span {
+      color: $color-gold;
+      display: block;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      max-width: 520px;
+      margin: 1rem auto 2rem;
+      opacity: 0.85;
+    }
+  }
+
+  &-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      .btn {
+        width: 100%;
+        justify-content: center;
+
+        &-outline {
+          margin: 0.5rem 0 0 0;
+        }
+      }
+    }
+  }
 }
