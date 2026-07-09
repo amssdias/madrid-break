@@ -1,369 +1,385 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-X79ST9JE20"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X79ST9JE20"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X79ST9JE20');
+  </script>
 
-			gtag('config', 'G-X79ST9JE20');
-		</script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/images/breakdance.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Clases de breakdance en Madrid para todos los niveles. Bailar transforma tu tiempo libre en algo emocionante y con propósito." />
+  <title>Madrid Break — Clases de Breakdance en Madrid</title>
 
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/images/breakdance.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Madrid Break</title>
-		<script type="module" crossorigin src="/assets/index-WHBTQtAK.js"></script>
-		<link rel="stylesheet" crossorigin href="/assets/index-C6XpDhkk.css">
-	</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script type="module" crossorigin src="/assets/index-Bo4WKSoN.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-D5cAyr3_.css">
+</head>
+<body>
 
-	<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-text">MADRID BREAK</div>
+    <div class="preloader-bar"></div>
+  </div>
 
-		<header class="header">
-			<div class="bg-video">
-				<video autoplay muted loop class="bg-video__content">
-					<source src="/assets/header-video-1-DSzCE6x4.mp4" type="video/mp4" />
-					Your browser does not support the video tag.
-				</video>
-			</div>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="navbar-brand"><i class="fa-solid fa-bolt"></i> MADRID BREAK</a>
+    <ul class="navbar-links">
+      <li><a href="#intro">Inicio</a></li>
+      <li><a href="#benefits">Beneficios</a></li>
+      <li><a href="#testimonials">Alumnos</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://instagram.com/madrid.break" target="_blank" class="navbar-cta" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Contactar</a></li>
+    </ul>
+    <button class="navbar-toggle" id="menuToggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+  </nav>
 
-			<nav class="nav">
-				<h2>Madrid.Break</h2>
-			</nav>
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <button class="mobile-nav-close" id="mobileClose" aria-label="Cerrar menú"><i class="fa-solid fa-xmark"></i></button>
+    <a href="#intro" class="mobile-link">Inicio</a>
+    <a href="#benefits" class="mobile-link">Beneficios</a>
+    <a href="#testimonials" class="mobile-link">Alumnos</a>
+    <a href="#faq" class="mobile-link">FAQ</a>
+    <a href="#contact" class="mobile-link" style="color:var(--green, #43C59E)">Contactar</a>
+  </div>
 
-			<div class="container container-column flex-center header-content">
-				<h1 class="heading-primary" data-translate="header-heading">Enchance your dance skills</h1>
-				<p class="margin-bottom-small" data-translate="header-paragraph">Unleash your rhythm and energy with our breakdance classes in Madrid. Whether you’re a total beginner or looking to level up, we’ll help you build confidence, style, and flow on the dance floor.</p>
+  <!-- Floating WhatsApp -->
+  <a href="https://instagram.com/madrid.break" target="_blank" class="floating-cta" rel="noopener noreferrer">
+    <i class="fa-brands fa-instagram"></i> Escríbenos
+  </a>
 
-				<div class="container">
-					<a href="https://wa.me/34614077112?text=Hola%2C%20me%20gustaria%20hacer%20clases%20de%20breakdance%20%3AD" class="btn btn-cta" data-translate="header-cta">Join us on Whatsapp</a>
-					<a href="https://www.youtube.com/@MadridBreak" class="btn" data-translate="header-btn">Watch videos</a>
-				</div>
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="bg-video">
+      <video class="bg-video__content" autoplay muted loop playsinline poster="/images/intro/dias-3.jpg">
+        <source src="/assets/header-video-1-DSzCE6x4.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="heading-primary">Madrid<span>Break</span></h1>
+      <p>El poder de la danza. Clases de breakdance para todos los niveles en Madrid.</p>
+      <div class="hero-actions">
+        <a href="https://instagram.com/madrid.break" target="_blank" class="btn btn-primary" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Apúntate aquí</a>
+        <a href="#benefits" class="btn btn-outline"><i class="fa-solid fa-play"></i> Descubrir más</a>
+      </div>
+    </div>
+  </header>
 
-			</div>
+  <main>
 
-		</header>
+    <!-- Intro / Stats -->
+    <section class="section-intro" id="intro">
+      <div class="section-intro__grid">
+        <div class="section-intro__images reveal-left">
+          <div class="section-intro__img-main">
+            <img src="/images/intro/dias-3.jpg" alt="breakdance madrid" loading="lazy" decoding="async" />
+          </div>
+          <div class="section-intro__img-secondary">
+            <img src="/images/intro/dias-2.jpg" alt="street dance move" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="section-intro__text reveal-right">
+          <span class="section-tag">El poder de la danza</span>
+          <h2>Bailar transforma tu tiempo libre en algo emocionante y con propósito.</h2>
+          <p class="paragraph">
+            Mantén tu cuerpo activo, tu mente despierta y tu espíritu vivo. De la música al movimiento,
+            descubrirás una nueva forma de disfrutar la vida mientras desarrollas habilidades que te acompañarán siempre.
+          </p>
+          <div class="section-intro__stats">
+            <div class="section-intro__stat">
+              <strong data-count="425">0</strong>
+              <span>Alumnos</span>
+            </div>
+            <div class="section-intro__stat">
+              <strong data-count="967">0</strong>
+              <span>Shows en vivo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<main class="main">
+    <!-- Benefits -->
+    <section class="section-benefits" id="benefits">
+      <div class="section-benefits__header reveal">
+        <span class="section-tag">Beneficios</span>
+        <h2 class="heading-secondary">Más que clases de baile</h2>
+        <p class="section-benefits__subtitle">Beneficios reales para personas reales. Para todos los niveles, divertido y efectivo.</p>
+      </div>
 
-			<section class="section-intro">
-				<div class="section-intro__content">
-					<h2 class="heading-secondary margin-bottom-small text-align-center" data-translate="section-intro-header">The Power Of Dance</h2>
-					<p class="paragraph" data-translate="section-intro-paragraph">Dancing transforms your free time into something exciting and meaningful.</p>
-					<p class="paragraph margin-bottom-small" data-translate="section-intro-paragraph-2">It keeps your body active, your mind sharp, and your spirit alive. From music to movement, you’ll find a new way to enjoy life while building skills you’ll carry forever.</p>
-				
-					<a href="https://wa.me/34614077112?text=Hola%2C%20me%20gustaria%20hacer%20clases%20de%20breakdance%20%3AD" class="btn btn-primary" data-translate="section-intro-btn">Register Here</a>
+      <ul class="cards-container">
 
-					<div class="section-intro__content__value">
-						<p>
-							<strong class="big-number">425<span>+</span></strong><br>
-							<small data-translate="section-intro-students">Successfull students</small>
-						</p>
-						<p>
-							<strong class="big-number">967<span>+</span></strong><br>
-							<small data-translate="section-intro-shows">Live Performance</small>
-						</p>
-					</div>
-				</div>
+        <li class="card reveal">
+          <article class="card__body">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M11.2691 4.41115C11.5006 3.89177 11.6164 3.63208 11.7776 3.55211C11.9176 3.48263 12.082 3.48263 12.222 3.55211C12.3832 3.63208 12.499 3.89177 12.7305 4.41115L14.5745 8.54808C14.643 8.70162 14.6772 8.77839 14.7302 8.83718C14.777 8.8892 14.8343 8.93081 14.8982 8.95929C14.9705 8.99149 15.0541 9.00031 15.2213 9.01795L19.7256 9.49336C20.2911 9.55304 20.5738 9.58288 20.6997 9.71147C20.809 9.82316 20.8598 9.97956 20.837 10.1342C20.8108 10.3122 20.5996 10.5025 20.1772 10.8832L16.8125 13.9154C16.6877 14.0279 16.6252 14.0842 16.5857 14.1527C16.5507 14.2134 16.5288 14.2807 16.5215 14.3503C16.5132 14.429 16.5306 14.5112 16.5655 14.6757L17.5053 19.1064C17.6233 19.6627 17.6823 19.9408 17.5989 20.1002C17.5264 20.2388 17.3934 20.3354 17.2393 20.3615C17.0619 20.3915 16.8156 20.2495 16.323 19.9654L12.3995 17.7024C12.2539 17.6184 12.1811 17.5765 12.1037 17.56C12.0352 17.5455 11.9644 17.5455 11.8959 17.56C11.8185 17.5765 11.7457 17.6184 11.6001 17.7024L7.67662 19.9654C7.18404 20.2495 6.93775 20.3915 6.76034 20.3615C6.60623 20.3354 6.47319 20.2388 6.40075 20.1002C6.31736 19.9408 6.37635 19.6627 6.49434 19.1064L7.4341 14.6757C7.46898 14.5112 7.48642 14.429 7.47814 14.3503C7.47081 14.2807 7.44894 14.2134 7.41394 14.1527C7.37439 14.0842 7.31195 14.0279 7.18708 13.9154L3.82246 10.8832C3.40005 10.5025 3.18884 10.3122 3.16258 10.1342C3.13978 9.97956 3.19059 9.82316 3.29993 9.71147C3.42581 9.58288 3.70856 9.55304 4.27406 9.49336L8.77835 9.01795C8.94553 9.00031 9.02911 8.99149 9.10139 8.95929C9.16534 8.93081 9.2226 8.8892 9.26946 8.83718C9.32241 8.77839 9.35663 8.70162 9.42508 8.54808L11.2691 4.41115Z" stroke="#6A52B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Confianza total</h3>
+            <p class="card__text">Sentirte orgulloso dentro y fuera de la pista con logros simples y progresivos en cada clase.</p>
+          </article>
+        </li>
 
-				<div class="section-intro__img">
-					<img 
-						class="section-intro__img--img section-intro__img--img-1" 
-						src="images/intro/dias-3.jpg" 
-						alt="street dance"
-						loading="lazy"
-						decoding="async"
-					>
-					<img 
-						class="section-intro__img--img section-intro__img--img-2" 
-						src="images/intro/dias-2.jpg" 
-						alt="street dance move"
-						loading="lazy"
-						decoding="async"
-					>
-				</div>
-			</section>
+        <li class="card reveal">
+          <article class="card__body">
+            <div class="card__icon">
+              <svg fill="#43C59E" viewBox="0 0 512 512"><path d="M193.69,152.84a16,16,0,0,1,29.64,2.56l36.4,121.36,30-59.92a16,16,0,0,1,28.62,0L345.89,272h96.76A213.08,213.08,0,0,0,464,176.65C463.37,114.54,413.54,64,352.92,64c-48.09,0-80,29.54-96.92,51-16.88-21.49-48.83-51-96.92-51C98.46,64,48.63,114.54,48,176.65A211.13,211.13,0,0,0,56.93,240h93.18Z"/><path d="M321.69,295.16,304,259.78l-33.69,67.38A16,16,0,0,1,256,336q-.67,0-1.38-.06a16,16,0,0,1-14-11.34l-36.4-121.36-30,59.92A16,16,0,0,1,160,272H69.35q14,29.29,37.27,57.66c18.77,22.88,52.8,59.46,131.39,112.81a31.84,31.84,0,0,0,36,0c78.59-53.35,112.62-89.93,131.39-112.81a316.79,316.79,0,0,0,19-25.66H336A16,16,0,0,1,321.69,295.16Z"/></svg>
+            </div>
+            <h3 class="card__title">Mantente en forma</h3>
+            <p class="card__text">Quema calorías, mejora tu coordinación y gana fuerza mientras disfrutas.</p>
+          </article>
+        </li>
 
-			<section class="section-benefits">
-				<header class="section-benefits__header">
-					<h2 class="heading-secondary margin-bottom-xxsmall" data-translate="section-benefits-header">
-						More Than Just Dance Classes
-					</h2>
-					<p class="section-benefits__subtitle" data-translate="section-benefits-subtitle">Real benefits for real people — beginner friendly, fun, and effective.</p>
-				</header>
+        <li class="card reveal">
+          <article class="card__body">
+            <div class="card__icon">
+              <svg viewBox="0 0 16 16" fill="#FFD447"><rect width="16" height="16" fill="none"/><path d="M10,1L3,9h4.5L6,15l7-8H8.5L10,1z"/></svg>
+            </div>
+            <h3 class="card__title">Exprésate</h3>
+            <p class="card__text">Descubre tu estilo único y cuenta tu historia a través del movimiento.</p>
+          </article>
+        </li>
 
-				<ul class="cards-container">
+        <li class="card reveal">
+          <article class="card__body">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 19C9 20.1046 7.65685 21 6 21C4.34315 21 3 20.1046 3 19C3 17.8954 4.34315 17 6 17C7.65685 17 9 17.8954 9 19ZM9 19V5L21 3V17M21 17C21 18.1046 19.6569 19 18 19C16.3431 19 15 18.1046 15 17C15 15.8954 16.3431 15 18 15C19.6569 15 21 15.8954 21 17ZM9 9L21 7" stroke="#A896D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Siente el ritmo</h3>
+            <p class="card__text">Disfruta tu música favorita de una forma diferente y muévete con seguridad.</p>
+          </article>
+        </li>
 
-					<li class="card">
-						<article class="card__body">
-							<div class="card__icon">
-								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11.2691 4.41115C11.5006 3.89177 11.6164 3.63208 11.7776 3.55211C11.9176 3.48263 12.082 3.48263 12.222 3.55211C12.3832 3.63208 12.499 3.89177 12.7305 4.41115L14.5745 8.54808C14.643 8.70162 14.6772 8.77839 14.7302 8.83718C14.777 8.8892 14.8343 8.93081 14.8982 8.95929C14.9705 8.99149 15.0541 9.00031 15.2213 9.01795L19.7256 9.49336C20.2911 9.55304 20.5738 9.58288 20.6997 9.71147C20.809 9.82316 20.8598 9.97956 20.837 10.1342C20.8108 10.3122 20.5996 10.5025 20.1772 10.8832L16.8125 13.9154C16.6877 14.0279 16.6252 14.0842 16.5857 14.1527C16.5507 14.2134 16.5288 14.2807 16.5215 14.3503C16.5132 14.429 16.5306 14.5112 16.5655 14.6757L17.5053 19.1064C17.6233 19.6627 17.6823 19.9408 17.5989 20.1002C17.5264 20.2388 17.3934 20.3354 17.2393 20.3615C17.0619 20.3915 16.8156 20.2495 16.323 19.9654L12.3995 17.7024C12.2539 17.6184 12.1811 17.5765 12.1037 17.56C12.0352 17.5455 11.9644 17.5455 11.8959 17.56C11.8185 17.5765 11.7457 17.6184 11.6001 17.7024L7.67662 19.9654C7.18404 20.2495 6.93775 20.3915 6.76034 20.3615C6.60623 20.3354 6.47319 20.2388 6.40075 20.1002C6.31736 19.9408 6.37635 19.6627 6.49434 19.1064L7.4341 14.6757C7.46898 14.5112 7.48642 14.429 7.47814 14.3503C7.47081 14.2807 7.44894 14.2134 7.41394 14.1527C7.37439 14.0842 7.31195 14.0279 7.18708 13.9154L3.82246 10.8832C3.40005 10.5025 3.18884 10.3122 3.16258 10.1342C3.13978 9.97956 3.19059 9.82316 3.29993 9.71147C3.42581 9.58288 3.70856 9.55304 4.27406 9.49336L8.77835 9.01795C8.94553 9.00031 9.02911 8.99149 9.10139 8.95929C9.16534 8.93081 9.2226 8.8892 9.26946 8.83718C9.32241 8.77839 9.35663 8.70162 9.42508 8.54808L11.2691 4.41115Z" stroke="#6A52B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-							</div>
-							<h3 class="card__title" data-translate="section-benefits-card-confidence-header">Confidence Boost</h3>
-							<p class="card__text" data-translate="section-benefits-card-confidence-paragraph">Feel proud on and off the dance floor with simple, progressive wins every class.</p>
-						</article>
-					</li>
+        <li class="card reveal">
+          <article class="card__body">
+            <div class="card__icon">
+              <svg fill="#FFD447" viewBox="0 0 260 260"><path d="M32.478,129.993c0-6.691,5.422-12.114,12.111-12.114c6.689,0,12.111,5.424,12.111,12.114 c0,6.691-5.422,12.114-12.111,12.114C37.901,142.107,32.478,136.683,32.478,129.993z M89.844,126.509 c-2.74-1.858-6.473-1.143-8.333,1.6L69.381,146H29.975c-1.088,0-2.156,0.296-3.089,0.856L4.912,160.051 c-2.332,1.399-3.431,4.193-2.676,6.807l6.458,22.38c0.758,2.629,3.157,4.339,5.762,4.339c0.551,0,1.111-0.077,1.667-0.237 c3.184-0.919,5.02-4.244,4.101-7.428l-5.178-17.947L28,160.229V222l-16.566,24.971c-2.132,3.225-1.247,7.567,1.978,9.699 c1.188,0.786,2.529,1.162,3.854,1.162c2.271,0,4.499-1.104,5.845-3.141l17.703-26.773c0.757-1.145,1.161-2.487,1.161-3.86v-20.074 c0.503-0.013,0.999-0.034,1.484-0.068l8.516,20.79V251c0,3.866,3.134,7,7,7s7-3.134,7-7v-27.673c0-0.91-0.177-1.812-0.522-2.653 l-11.478-28.021V158h18.587c1.99,0,3.85-0.986,4.966-2.633l13.915-20.524C93.303,132.1,92.587,128.369,89.844,126.509z"/></svg>
+            </div>
+            <h3 class="card__title">Comunidad</h3>
+            <p class="card__text">Conoce gente increíble, entrena en equipo y mantente motivado.</p>
+          </article>
+        </li>
 
-					<li class="card">
-						<article class="card__body">
-							<div class="card__icon">
-								<svg fill="#43C59E" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>ionicons-v5-m</title><path d="M193.69,152.84a16,16,0,0,1,29.64,2.56l36.4,121.36,30-59.92a16,16,0,0,1,28.62,0L345.89,272h96.76A213.08,213.08,0,0,0,464,176.65C463.37,114.54,413.54,64,352.92,64c-48.09,0-80,29.54-96.92,51-16.88-21.49-48.83-51-96.92-51C98.46,64,48.63,114.54,48,176.65A211.13,211.13,0,0,0,56.93,240h93.18Z"></path><path d="M321.69,295.16,304,259.78l-33.69,67.38A16,16,0,0,1,256,336q-.67,0-1.38-.06a16,16,0,0,1-14-11.34l-36.4-121.36-30,59.92A16,16,0,0,1,160,272H69.35q14,29.29,37.27,57.66c18.77,22.88,52.8,59.46,131.39,112.81a31.84,31.84,0,0,0,36,0c78.59-53.35,112.62-89.93,131.39-112.81a316.79,316.79,0,0,0,19-25.66H336A16,16,0,0,1,321.69,295.16Z"></path><path d="M464,272H442.65a260.11,260.11,0,0,1-18.25,32H464a16,16,0,0,0,0-32Z"></path><path d="M48,240a16,16,0,0,0,0,32H69.35a225.22,225.22,0,0,1-12.42-32Z"></path></g></svg>
-							</div>
-							<h3 class="card__title" data-translate="section-benefits-card-fit-header">Stay Fit &amp; Agile</h3>
-							<p class="card__text" data-translate="section-benefits-card-fit-paragraph">Burn calories, improve coordination, and build strength while having fun.</p>
-						</article>
-					</li>
+        <li class="card reveal">
+          <article class="card__body">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none"><path fill="none" stroke="#43C59E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12,11 L11,14 L12,17 L10.5,17 L9,14 L9.5,9.5 L12,11 Z M13,2 L9,6 L9,11 L9,14 L10,17 L6,17 L3,22 M20.5,22 L15.5,18.5 L12,17 L11,14 L12,11 L15.5,13 L15.5,18.5 M14,8.5 C13.4477153,8.5 13,8.05228475 13,7.5 C13,6.94771525 13.4477153,6.5 14,6.5 C14.5522847,6.5 15,6.94771525 15,7.5 C15,8.05228475 14.5522847,8.5 14,8.5 Z M11,10.5 L10,17 L10,13.5 L11,10.5 Z"/></svg>
+            </div>
+            <h3 class="card__title">Adiós estrés</h3>
+            <p class="card__text">Desconecta del día y sal de clase con una sonrisa gigante.</p>
+          </article>
+        </li>
 
-					<li class="card">
-						<article class="card__body">
-							<div class="card__icon">
-								<svg viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFD447"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="16" height="16" id="icon-bound" fill="none"></rect> <path d="M10,1L3,9h4.5L6,15l7-8H8.5L10,1z"></path> </g></svg>
-							</div>
-							<h3 class="card__title" data-translate="section-benefits-card-express-header">Express Yourself</h3>
-							<p class="card__text" data-translate="section-benefits-card-express-paragraph">Discover your unique style and tell your story through movement.</p>
-						</article>
-					</li>
-					
-					<li class="card">
-						<article class="card__body">
-							<div class="card__icon">
-								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 19C9 20.1046 7.65685 21 6 21C4.34315 21 3 20.1046 3 19C3 17.8954 4.34315 17 6 17C7.65685 17 9 17.8954 9 19ZM9 19V5L21 3V17M21 17C21 18.1046 19.6569 19 18 19C16.3431 19 15 18.1046 15 17C15 15.8954 16.3431 15 18 15C19.6569 15 21 15.8954 21 17ZM9 9L21 7" stroke="#A896D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-							</div>
-							<h3 class="card__title" data-translate="section-benefits-card-rythm-header">Feel the Rhythm</h3>
-							<p class="card__text" data-translate="section-benefits-card-rythm-paragraph">Enjoy your favorite music in a new way and move in sync with confidence.</p>
-						</article>
-					</li>
+      </ul>
+    </section>
 
-					<li class="card">
-						<article class="card__body">
-							<div class="card__icon">
-								<svg fill="#FFD447" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 260 260" enable-background="new 0 0 260 260" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M32.478,129.993c0-6.691,5.422-12.114,12.111-12.114c6.689,0,12.111,5.424,12.111,12.114 c0,6.691-5.422,12.114-12.111,12.114C37.901,142.107,32.478,136.683,32.478,129.993z M89.844,126.509 c-2.74-1.858-6.473-1.143-8.333,1.6L69.381,146H29.975c-1.088,0-2.156,0.296-3.089,0.856L4.912,160.051 c-2.332,1.399-3.431,4.193-2.676,6.807l6.458,22.38c0.758,2.629,3.157,4.339,5.762,4.339c0.551,0,1.111-0.077,1.667-0.237 c3.184-0.919,5.02-4.244,4.101-7.428l-5.178-17.947L28,160.229V222l-16.566,24.971c-2.132,3.225-1.247,7.567,1.978,9.699 c1.188,0.786,2.529,1.162,3.854,1.162c2.271,0,4.499-1.104,5.845-3.141l17.703-26.773c0.757-1.145,1.161-2.487,1.161-3.86v-20.074 c0.503-0.013,0.999-0.034,1.484-0.068l8.516,20.79V251c0,3.866,3.134,7,7,7s7-3.134,7-7v-27.673c0-0.91-0.177-1.812-0.522-2.653 l-11.478-28.021V158h18.587c1.99,0,3.85-0.986,4.966-2.633l13.915-20.524C93.303,132.1,92.587,128.369,89.844,126.509z M248.08,33.421c-2.593-1.264-5.159-2.546-7.697-3.845c-2.563-1.34-5.118-2.73-7.634-4.119c-4.699-2.599-9.289-5.262-13.788-7.974 c-0.329,0.184-0.661,0.362-0.991,0.545c-0.026,5.356-0.248,10.582-0.545,15.919c-0.325,5.701-0.766,11.463-1.326,17.281 c-9.503-6.017-18.646-12.449-27.3-18.981c-0.337,0.143-0.671,0.291-1.008,0.432c-0.649,5.207-1.394,10.456-2.256,15.751 c-0.461,2.829-0.952,5.671-1.475,8.524c-0.524,2.851-1.068,5.741-1.688,8.52c-4.562-3.653-9.001-7.353-13.314-11.094 c-4.035-3.509-7.934-6.989-11.793-10.708c-0.359,0.109-0.718,0.216-1.078,0.324c-1.194,5.117-2.487,10.264-3.902,15.446 c-0.758,2.776-1.548,5.56-2.37,8.353c-0.837,2.735-1.711,5.456-2.615,8.196c-8.013-7.973-15.495-15.839-22.61-24.338 c-0.374,0.07-0.749,0.133-1.123,0.203c-1.731,4.976-3.563,9.972-5.519,14.988l-1.597,4.038l-1.662,3.94 c-1.124,2.627-2.281,5.257-3.471,7.892c-3.676-4.499-7.221-9.016-10.636-13.548c-3.188-4.24-6.28-8.691-9.253-13.063 c-0.379,0.03-0.757,0.067-1.136,0.096c-2.25,4.779-4.602,9.569-7.077,14.364c-2.658,5.053-5.451,10.011-8.37,15.026 c-3.178-4.848-6.227-9.701-9.147-14.553c-2.724-4.665-5.324-9.33-7.824-13.991c-0.382-0.009-0.762-0.026-1.144-0.036 c-2.741,4.525-5.585,9.086-8.549,13.554c-3.171,4.699-6.471,9.39-9.901,14.07c-2.651-5.173-5.185-10.21-7.567-15.467 c-2.222-4.919-4.32-9.824-6.315-14.715c-0.371-0.049-0.741-0.106-1.112-0.155c-1.493,1.97-2.999,3.94-4.542,5.904l-2.683,3.38 l-2.715,3.267C9.694,71.196,5.912,75.526,2,79.83V50.714v-0.962v-4.138c20.565,4.315,41.867,6.602,63.697,6.602 c62.298,0,120.348-18.48,169.002-50.216v0.001L246,1.999C246.982,12.411,247.987,22.759,248.08,33.421z M141.579,142.107 c6.689,0,12.111-5.424,12.111-12.114c0-6.691-5.422-12.114-12.111-12.114s-12.111,5.424-12.111,12.114 C129.468,136.683,134.89,142.107,141.579,142.107z M190.012,175.023l-31.442-27.537c-1.094-0.958-2.499-1.486-3.953-1.486h-22.944 c-1.325,0-2.612,0.438-3.662,1.247l-17.924,13.809l-13.515-11.678c-2.507-2.165-6.296-1.891-8.463,0.617 c-2.167,2.507-1.89,6.296,0.617,8.463l17.22,14.88c2.157,1.863,5.327,1.952,7.584,0.213l16.471-12.69L130,197.429l-13.67,21.417 c-0.537,0.842-0.888,1.788-1.029,2.776l-4.032,28.219c-0.547,3.827,2.112,7.373,5.939,7.92c0.336,0.048,0.669,0.071,0.999,0.071 c3.427,0,6.422-2.52,6.921-6.011l3.817-26.72L142,204.65V251c0,3.866,3.134,7,7,7s7-3.134,7-7v-55v-4v-30.812l26.105,22.863 c1.139,0.997,2.548,1.486,3.951,1.486c1.669,0,3.329-0.692,4.516-2.047C192.756,180.997,192.505,177.207,190.012,175.023z M255.511,234.689l-21.518-18.366l-5.02-24.329V156.39l27.99-41.25c1.86-2.742,1.146-6.474-1.596-8.334 c-2.743-1.861-6.474-1.146-8.334,1.596L221.522,146h-32.7l-16.73-14.769c-2.483-2.193-6.276-1.958-8.469,0.527 c-2.193,2.484-1.957,6.276,0.527,8.469l18.432,16.271c1.097,0.968,2.509,1.502,3.971,1.502H203v93c0,3.866,3.108,7,6.974,7 s7-3.134,7-7v-47.885l3.794,18.388c0.314,1.524,1.127,2.9,2.311,3.91l23.343,19.925c1.318,1.125,2.935,1.676,4.542,1.676 c1.978,0,3.942-0.833,5.327-2.455C258.8,241.618,258.452,237.199,255.511,234.689z M210.669,141.855 c6.689,0,12.111-5.424,12.111-12.114c0-6.691-5.422-12.114-12.111-12.114c-6.689,0-12.111,5.424-12.111,12.114 C198.558,136.431,203.98,141.855,210.669,141.855z"></path> </g></svg>
-							</div>
-							<h3 class="card__title" data-translate="section-benefits-card-community-header">Community &amp; Friends</h3>
-							<p class="card__text" data-translate="section-benefits-card-community-paragraph">Meet friendly people, train together, and stay motivated.</p>
-						</article>
-					</li>
-					
-					<li class="card">
-						<article class="card__body">
-							<div class="card__icon">
-								<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="none" stroke="#43C59E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12,11 L11,14 L12,17 L10.5,17 L9,14 L9.5,9.5 L12,11 Z M13,2 L9,6 L9,11 L9,14 L10,17 L6,17 L3,22 M20.5,22 L15.5,18.5 L12,17 L11,14 L12,11 L15.5,13 L15.5,18.5 M14,8.5 C13.4477153,8.5 13,8.05228475 13,7.5 C13,6.94771525 13.4477153,6.5 14,6.5 C14.5522847,6.5 15,6.94771525 15,7.5 C15,8.05228475 14.5522847,8.5 14,8.5 Z M11,10.5 L10,17 L10,13.5 L11,10.5 Z"></path> </g></svg>
-							</div>
-							<h3 class="card__title" data-translate="section-benefits-card-stress-header">Stress Relief</h3>
-							<p class="card__text" data-translate="section-benefits-card-stress-paragraph">Disconnect from the day and leave class with a big smile.</p>
-						</article>
-					</li>
+    <!-- Testimonials -->
+    <section class="section-testimonials" id="testimonials">
+      <div class="section-testimonials__header reveal">
+        <span class="section-tag">Testimonios</span>
+        <h2 class="heading-secondary">Lo que dicen nuestros alumnos</h2>
+        <p class="section-testimonials__subtitle">Personas reales, resultados reales.</p>
+      </div>
 
-				</ul>
-				
-			</section>
+      <ul class="testimonials-container">
 
-			<section class="section-testimonials">
-				<header class="section-testimonials__header">
-					<h2 class="heading-secondary margin-bottom-xxsmall" data-translate="section-testimonials-header">What students say</h2>
-					<p class="section-testimonials__subtitle" data-translate="section-testimonials-subtitle">Real people, real results.</p>
-				</header>
+        <li class="testimonial reveal">
+          <figure class="testimonial__card">
+            <div class="testimonial__rating" aria-label="5 estrellas">
+              <svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg>
+            </div>
+            <blockquote class="testimonial__quote">Empecé desde cero y ahora sigo el ritmo con seguridad. ¡Las clases son súper divertidas!</blockquote>
+            <figcaption class="testimonial__meta">
+              <span class="testimonial__name">María G.</span>
+              <span class="testimonial__role">Principiante · Madrid</span>
+            </figcaption>
+          </figure>
+        </li>
 
-				<ul class="testimonials-container" role="list" aria-label="Student testimonials">
+        <li class="testimonial reveal">
+          <figure class="testimonial__card">
+            <div class="testimonial__rating" aria-label="5 estrellas">
+              <svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg>
+            </div>
+            <blockquote class="testimonial__quote">Mejoré mi coordinación rápido y conocí gente increíble. Cada sesión tiene una energía brutal.</blockquote>
+            <figcaption class="testimonial__meta">
+              <span class="testimonial__name">Javier R.</span>
+              <span class="testimonial__role">Principiante · Grupo Tarde</span>
+            </figcaption>
+          </figure>
+        </li>
 
-					<!-- Testimonial 1 -->
-					<li class="testimonial">
-						<figure class="testimonial__card">
-							<blockquote class="testimonial__quote" data-translate="section-testimonials-quote-1">
-								“I started as a total beginner and now I can follow the beat and feel confident. Classes are super fun!”
-							</blockquote>
-							<figcaption class="testimonial__meta">
-								<div class="testimonial__rating" aria-label="Rated 5 out of 5">
-									<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-									<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-									<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-									<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-									<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-								</div>
-								<span class="testimonial__name">María G.</span>
-								<span class="testimonial__role">Beginner · Madrid</span>
-							</figcaption>
-						</figure>
-					</li>
+        <li class="testimonial reveal">
+          <figure class="testimonial__card">
+            <div class="testimonial__rating" aria-label="5 estrellas">
+              <svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg><svg fill="#FFD447" viewBox="0 0 32 32"><path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"/></svg>
+            </div>
+            <blockquote class="testimonial__quote">Mezcla perfecta de técnica y diversión. La guía es clara y siempre salgo con una sonrisa.</blockquote>
+            <figcaption class="testimonial__meta">
+              <span class="testimonial__name">Ana S.</span>
+              <span class="testimonial__role">Fin de Semana · Intermedio</span>
+            </figcaption>
+          </figure>
+        </li>
 
-					<!-- Testimonial 2 -->
-					<li class="testimonial">
-						<figure class="testimonial__card">
-							<blockquote class="testimonial__quote" data-translate="section-testimonials-quote-2">
-								“Great energy every session. I improved my coordination fast and met awesome people.”
-							</blockquote>
-							<figcaption class="testimonial__meta">
-								<div class="testimonial__rating" aria-label="Rated 5 out of 5">
-									<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-									<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-									<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-									<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-									<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-								</div>
-								<span class="testimonial__name">Javier R.</span>
-								<span class="testimonial__role">Beginner · Evening Group</span>
-							</figcaption>
-						</figure>
-					</li>
+      </ul>
+    </section>
 
-					<li class="testimonial">
-						<figure class="testimonial__card">
-							<blockquote class="testimonial__quote" data-translate="section-testimonials-quote-3">
-								“Perfect mix of technique and fun. The guidance is clear and I always leave with a smile.”
-							</blockquote>
-							<figcaption class="testimonial__meta">
-								<div class="testimonial__rating" aria-label="Rated 5 out of 5">
-										<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-										<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-										<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-										<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-										<svg fill="#000000" viewBox="0 0 32.00 32.00" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.00032"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="matrix(1,0,0,1,-192,-337)"> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M213.406,344.204C213.489,343.947 213.729,343.773 214,343.773C214.271,343.773 214.511,343.947 214.594,344.204C215.107,345.781 215.809,347.943 216.105,348.853C216.188,349.11 216.428,349.285 216.699,349.285C217.656,349.285 219.929,349.285 221.587,349.285C221.858,349.285 222.098,349.459 222.181,349.717C222.265,349.974 222.173,350.256 221.954,350.415C220.613,351.39 218.774,352.726 218,353.288C217.781,353.448 217.689,353.73 217.773,353.987C218.069,354.898 218.771,357.059 219.283,358.636C219.367,358.893 219.275,359.175 219.056,359.335C218.837,359.494 218.541,359.494 218.322,359.335C216.98,358.36 215.142,357.024 214.367,356.462C214.148,356.302 213.852,356.302 213.633,356.462C212.858,357.024 211.02,358.36 209.678,359.335C209.459,359.494 209.163,359.494 208.944,359.335C208.725,359.175 208.633,358.893 208.717,358.636C209.229,357.059 209.931,354.898 210.227,353.987C210.311,353.73 210.219,353.448 210,353.288C209.226,352.726 207.387,351.39 206.046,350.415C205.827,350.256 205.735,349.974 205.819,349.717C205.902,349.459 206.142,349.285 206.413,349.285C208.071,349.285 210.344,349.285 211.301,349.285C211.572,349.285 211.812,349.11 211.895,348.853C212.191,347.943 212.893,345.781 213.406,344.204Z" style="fill:#FFD447;"></path> </g> <g transform="matrix(1.6,0,0,1.6,-134.4,-210.8)"> <path d="M211.301,348.66L206.413,348.66C205.871,348.66 205.392,349.009 205.224,349.524C205.057,350.039 205.24,350.603 205.678,350.921L209.633,353.794L208.122,358.443C207.955,358.958 208.138,359.522 208.576,359.84C209.014,360.158 209.608,360.158 210.046,359.84L214,356.967L217.954,359.84C218.392,360.158 218.986,360.158 219.424,359.84C219.862,359.522 220.045,358.958 219.878,358.443L218.367,353.794L222.322,350.921C222.76,350.603 222.943,350.039 222.776,349.524C222.608,349.009 222.129,348.66 221.587,348.66L216.699,348.66L215.189,344.011C215.021,343.496 214.542,343.148 214,343.148C213.458,343.148 212.979,343.496 212.811,344.011L211.301,348.66ZM214,344.398C214,344.398 215.51,349.046 215.51,349.046C215.678,349.561 216.158,349.91 216.699,349.91L221.587,349.91C221.587,349.91 217.633,352.783 217.633,352.783C217.195,353.101 217.011,353.665 217.179,354.18L218.689,358.829C218.689,358.829 214.735,355.956 214.735,355.956C214.297,355.638 213.703,355.638 213.265,355.956L209.311,358.829C209.311,358.829 210.821,354.18 210.821,354.18C210.989,353.665 210.805,353.101 210.367,352.783L206.413,349.91C206.413,349.91 211.301,349.91 211.301,349.91C211.842,349.91 212.322,349.561 212.49,349.046L214,344.398Z" style="fill:#E6B800;"></path> </g> </g> </g></svg>
-								</div>
-								<span class="testimonial__name">Ana S.</span>
-								<span class="testimonial__role">Weekend Class · Intermediate</span>
-							</figcaption>
-						</figure>
-					</li>
+    <!-- FAQ -->
+    <section class="section-faq" id="faq">
+      <h2 class="heading-secondary margin-bottom-xxsmall text-align-center">FAQ</h2>
 
-				</ul>
+      <ul class="faq">
 
-			</section>
+        <li class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>¿Necesito experiencia previa en baile?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>¡Para nada! Nuestras clases están diseñadas para que cualquiera pueda aprender desde cero. Aunque nunca hayas bailado, te moverás con confianza paso a paso.</p>
+          </div>
+        </li>
 
-			<section class="section-classes">
-				<h2 class="heading-secondary margin-bottom-xxsmall text-align-center" data-translate="section-classes-header">Breakdance Classes — Coming Soon</h2>
+        <li class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>¿Qué debo llevar a clase?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Solo trae ropa cómoda y zapatillas — nada fancy. Lo que realmente importa es la energía que traes, nosotros nos encargamos del resto.</p>
+          </div>
+        </li>
 
-				<div class="section-classes__content">
-					<p class="paragraph margin-bottom-small" data-translate="section-classes-paragraph">We’re preparing group and private classes. Want to be the first to know when we launch?
-					</p>
+        <li class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>¿Cuánto dura cada clase?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Cada clase dura unos 60 minutos de pura diversión — mezcla de calentamiento, entrenamiento y estilo libre que te deja con energía.</p>
+          </div>
+        </li>
 
-					<div class="section-classes__content__cta">
+        <li class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>¿Cuánta gente hay por clase?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Mantenemos grupos pequeños (8–12 alumnos) para que recibas atención personalizada. Así mejoras más rápido mientras te sientes apoyado.</p>
+          </div>
+        </li>
 
-						<a href="https://wa.me/34614077112?text=Hola%2C%20me%20gustaria%20hacer%20clases%20de%20breakdance%20%3AD" class="section-classes-btn">
-							<div class="section-classes-btn__icon">
-								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z" fill="#43C59E"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z" fill="#43C59E"></path> </g></svg>
-							</div>
-							<span data-translate="section-classes-btn">Send us a message</span>
-						</a>
-					</div>
-				</div>
-			</section>
+        <li class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>¿Puedo apuntarme si no soy flexible ni fuerte todavía?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>¡Claro! El breakdance va de progreso, no de perfección. Con cada clase notarás cómo crecen tu fuerza, ritmo y confianza de forma natural.</p>
+          </div>
+        </li>
 
-			<section class="section-faq">
-				<h2 class="heading-secondary margin-bottom-xxsmall text-align-center" data-translate="section-faq-header">FAQ</h2>
+        <li class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>¿Ofrecéis clases privadas o actuaciones para eventos?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Por supuesto. Ofrecemos clases particulares 1-a-1 y también actuamos en bodas, fiestas y eventos para darles una energía inolvidable.</p>
+          </div>
+        </li>
 
-				<ul class="faq">
+      </ul>
+    </section>
 
-					<li class="faq__item">
-						<button class="faq__question" aria-expanded="false">
-							<span data-translate="section-faq-question-1">Do I need any dance experience to start?</span>
-							<span class="faq__icon">+</span>
-						</button>
-						<div class="faq__answer" hidden>
-							<p class="paragraph" data-translate="section-faq-answer-1">Absolutely not! Our classes are built so anyone can learn from zero. Even if you’ve never danced before, you’ll be moving confidently step-by-step.</p>
-						</div>
-					</li>
+    <!-- Contact -->
+    <section class="section-contact" id="contact">
+      <h2 class="heading-secondary margin-bottom-small text-align-center">Contacto</h2>
 
-					<li class="faq__item">
-						<button class="faq__question" aria-expanded="false">
-							<span data-translate="section-faq-question-2">What should I wear to class?</span>
-							<span class="faq__icon">+</span>
-						</button>
-						<div class="faq__answer" hidden>
-							<p class="paragraph" data-translate="section-faq-answer-2">Just bring comfortable clothes and sneakers — nothing fancy required. What really matters is the energy you bring, and we’ll take care of the rest.</p>
-						</div>
-					</li>
+      <div class="section-contact__grid">
+        <div class="section-contact__info">
+          <h3>Háblanos</h3>
+          <p><i class="fa-solid fa-location-dot"></i> Madrid, España</p>
+          <p><i class="fa-solid fa-envelope"></i> madridbreaking@gmail.com</p>
+          <p><a href="https://instagram.com/madrid.break" target="_blank" rel="noopener noreferrer" style="color:inherit"><i class="fa-brands fa-instagram"></i> @madrid.break</a></p>
 
-					<li class="faq__item">
-						<button class="faq__question" aria-expanded="false">
-							<span data-translate="section-faq-question-3">How long is each class?</span>
-							<span class="faq__icon">+</span>
-						</button>
-						<div class="faq__answer" hidden>
-							<p class="paragraph" data-translate="section-faq-answer-3">Every class lasts about 60 minutes of pure fun — a mix of warm-up, training, and freestyle that leaves you feeling energized and accomplished.</p>
-						</div>
-					</li>
+          <div class="section-contact__socials">
+            <a href="https://www.youtube.com/@MadridBreak" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com/madrid.break" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@madridbreaking" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.facebook.com/people/Madrid-Break/61581754283409/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
 
-					<li class="faq__item">
-						<button class="faq__question" aria-expanded="false">
-							<span data-translate="section-faq-question-4">How many people are in each class?</span>
-							<span class="faq__icon">+</span>
-						</button>
-						<div class="faq__answer" hidden>
-							<p class="paragraph" data-translate="section-faq-answer-4">We keep groups small and friendly (8–12 students) so you get plenty of personal attention. This way, you’ll improve faster while feeling supported.</p>
-						</div>
-					</li>
+        <form class="section-contact__form" id="contactForm">
+          <input type="text" name="name" placeholder="Tu nombre" required />
+          <input type="email" name="email" placeholder="Tu email" required />
+          <textarea name="message" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          <button type="submit" class="btn btn-primary" style="justify-content:center">
+            <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </section>
 
-					<li class="faq__item">
-						<button class="faq__question" aria-expanded="false">
-							<span data-translate="section-faq-question-5">Can I join even if I’m not flexible or strong yet?</span>
-							<span class="faq__icon">+</span>
-						</button>
-						<div class="faq__answer" hidden>
-							<p class="paragraph" data-translate="section-faq-answer-5">Yes! Breakdance is all about progress, not perfection. With every class you’ll notice your strength, rhythm, and confidence grow naturally.</p>
-						</div>
-					</li>
+  </main>
 
-					<li class="faq__item">
-						<button class="faq__question" aria-expanded="false">
-							<span data-translate="section-faq-question-6">Do you offer private classes or event performances?</span>
-							<span class="faq__icon">+</span>
-						</button>
-						<div class="faq__answer" hidden>
-							<p class="paragraph" data-translate="section-faq-answer-6">Definitely. We offer private 1-on-1 lessons for faster progress, and we also perform at weddings, parties, and events to bring unforgettable energy to your celebration.</p>
-						</div>
-					</li>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__info">
+        <h4>Madrid Break</h4>
+        <p>La energía del breakdance en Madrid.</p>
+      </div>
+      <div class="footer__info">
+        <h4>Ubicación</h4>
+        <p>Madrid, España</p>
+      </div>
+      <div class="footer__info">
+        <h4>Contacto</h4>
+        <p>madridbreaking@gmail.com</p>
+      </div>
+    </div>
 
-				</ul>
+    <div class="footer__socials">
+      <a href="https://www.youtube.com/@MadridBreak" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <svg viewBox="0 -0.5 25 25" fill="none" stroke="#ffffff"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.168 19.0028C20.4724 19.0867 22.41 17.29 22.5 14.9858V9.01982C22.41 6.71569 20.4724 4.91893 18.168 5.00282H6.832C4.52763 4.91893 2.58998 6.71569 2.5 9.01982V14.9858C2.58998 17.29 4.52763 19.0867 6.832 19.0028H18.168Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.008 9.17784L15.169 11.3258C15.3738 11.4454 15.4997 11.6647 15.4997 11.9018C15.4997 12.139 15.3738 12.3583 15.169 12.4778L12.008 14.8278C11.408 15.2348 10.5 14.8878 10.5 14.2518V9.75184C10.5 9.11884 11.409 8.77084 12.008 9.17784Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="https://instagram.com/madrid.break" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#FFFFFF"/><path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#FFFFFF"/><path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606Z" fill="#FFFFFF"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@madridbreaking" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <svg viewBox="62 70 675 675" fill="#FFFFFF"><path d="M196 498.32l1.64 4.63c-.21-.53-.81-2.15-1.64-4.63z" fill="#ee1d52"/><path d="M597.23 203.42v64.11s-29.11-1.19-50.67-6.91c-30.09-8-49.44-20.27-49.44-20.27s-13.35-8.75-14.43-9.37V400c0 9.41-2.47 32.92-10 52.51-9.83 25.65-25 42.48-27.79 45.92 0 0-18.46 22.75-51 38.07-29.33 13.82-55.09 13.47-62.8 13.82 0 0-44.52 1.84-84.6-25.33l-.2-.15a157.5 157.5 0 0 1-11.93-13.52c-12.79-16.27-20.63-35.51-22.6-41a.24.24 0 0 1 0-.07c-3.17-9.54-9.83-32.45-8.92-54.64 1.61-39.15 14.81-63.18 18.3-69.2A162.84 162.84 0 0 1 256.68 303a148.37 148.37 0 0 1 42.22-25 141.61 141.61 0 0 1 52.4-11v64.9s-32.94-10.9-59.3 8.4c-18.43 14.28-28.21 28.21-31.09 53.09-.12 18.31 4.37 44.22 29 61.5q4.31 2.85 8.46 5.06a65.85 65.85 0 0 0 15.5 15.05c24.06 15..."/></svg>
+      </a>
+      <a href="https://www.facebook.com/people/Madrid-Break/61581754283409/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6Z" fill="#FFFFFF"/></svg>
+      </a>
+    </div>
 
-			</section>
+    <div class="footer__rights">
+      <p>©2025 Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-			<section class="section-final-cta">
-				<h2 class="heading-secondary margin-bottom-xxsmall text-align-center" data-translate="section-final-cta-header">Limited Spots Available</h2>
-				<p class="paragraph margin-bottom-small" data-translate="section-final-cta-paragraph">Our next group starts soon. Don’t miss your chance!</p>
-				<a href="https://wa.me/34614077112?text=Hola%2C%20me%20gustaria%20hacer%20clases%20de%20breakdance%20%3AD" class="btn btn-cta" data-translate="section-final-cta-btn">Book Now</a>
-			</section>
-
-		</main>
-
-		<footer class="footer">
-			<div class="footer__content margin-bottom-small">
-				<div class="footer__content__info">
-					<h4 class="margin-bottom-xxsmall">Madrid Break</h4>
-					<p class="paragraph" data-translate="section-footer-paragraph">Bringing the energy of breakdance to Madrid.</p>
-				</div>
-				<div class="footer__content__info">
-					<h4 class="margin-bottom-xxsmall" data-translate="section-footer-location">Location</h4>
-					<p class="paragraph">Madrid</p>
-				</div>
-	
-				<div class="footer__content__info">
-					<h4 class="margin-bottom-xxsmall" data-translate="section-footer-contact">Contact Info</h4>
-					<p class="paragraph">madridbreaking@gmail.com</p>
-				</div>
-			</div>
-
-			<div class="footer__social-networks">
-					<a href="https://www.youtube.com/@MadridBreak" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
-						<svg viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M18.168 19.0028C20.4724 19.0867 22.41 17.29 22.5 14.9858V9.01982C22.41 6.71569 20.4724 4.91893 18.168 5.00282H6.832C4.52763 4.91893 2.58998 6.71569 2.5 9.01982V14.9858C2.58998 17.29 4.52763 19.0867 6.832 19.0028H18.168Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.008 9.17784L15.169 11.3258C15.3738 11.4454 15.4997 11.6647 15.4997 11.9018C15.4997 12.139 15.3738 12.3583 15.169 12.4778L12.008 14.8278C11.408 15.2348 10.5 14.8878 10.5 14.2518V9.75184C10.5 9.11884 11.409 8.77084 12.008 9.17784Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-					</a>
-					<a href="https://instagram.com/madrid.break" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#FFFFFF"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#FFFFFF"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#FFFFFF"></path> </g></svg>
-					</a>
-					<a href="https://www.tiktok.com/@madridbreaking" target="_blank" rel="noopener noreferrer" aria-label="Tik Tok">
-						<svg viewBox="62.370000000000005 70.49 675.3000000000001 675.3000000000001" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" stroke="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="#ee1d52"> <path d="M196 498.32l1.64 4.63c-.21-.53-.81-2.15-1.64-4.63zM260.9 393.39c2.88-24.88 12.66-38.81 31.09-53.09 26.37-19.34 59.31-8.4 59.31-8.4V267a135.84 135.84 0 0 1 23.94 1.48V352s-32.93-10.94-59.3 8.41c-18.42 14.27-28.22 28.21-31.09 53.09-.09 13.51 2.34 31.17 13.53 46.44q-4.15-2.22-8.46-5.06c-24.65-17.27-29.14-43.18-29.02-61.49zM511.25 147c-18.14-20.74-25-41.68-27.48-56.39h22.82s-4.55 38.57 28.61 76.5l.46.51A132.76 132.76 0 0 1 511.25 147zM621.18 205.8v81.84s-29.12-1.19-50.67-6.91c-30.09-8-49.43-20.27-49.43-20.27s-13.36-8.75-14.44-9.36v169c0 9.41-2.47 32.91-10 52.51-9.83 25.64-25 42.47-27.79 45.91 0 0-18.45 22.75-51 38.07-29.34 13.82-55.1 13.47-62.8 13.82 0 0-44.53 1.84-84.6-25.33a169.63 169.63 0 0 1-24.16-20.26l.2.15c40.08 27.17 84.6 25.33 84.6 25.33 7.71-.35 33.47 0 62.8-13.82 32.52-15.32 51-38.07 51-38.07 2.76-3.44 18-20.27 27.79-45.92 7.51-19.59 10-43.1 10-52.51V231c1.08.62 14.43 9.37 14.43 9.37s19.35 12.28 49.44 20.27c21.56 5.72 50.67 6.91 50.67 6.91v-64.13c9.96 2.33 18.45 2.96 23.96 2.38z"></path> </g> <path d="M597.23 203.42v64.11s-29.11-1.19-50.67-6.91c-30.09-8-49.44-20.27-49.44-20.27s-13.35-8.75-14.43-9.37V400c0 9.41-2.47 32.92-10 52.51-9.83 25.65-25 42.48-27.79 45.92 0 0-18.46 22.75-51 38.07-29.33 13.82-55.09 13.47-62.8 13.82 0 0-44.52 1.84-84.6-25.33l-.2-.15a157.5 157.5 0 0 1-11.93-13.52c-12.79-16.27-20.63-35.51-22.6-41a.24.24 0 0 1 0-.07c-3.17-9.54-9.83-32.45-8.92-54.64 1.61-39.15 14.81-63.18 18.3-69.2A162.84 162.84 0 0 1 256.68 303a148.37 148.37 0 0 1 42.22-25 141.61 141.61 0 0 1 52.4-11v64.9s-32.94-10.9-59.3 8.4c-18.43 14.28-28.21 28.21-31.09 53.09-.12 18.31 4.37 44.22 29 61.5q4.31 2.85 8.46 5.06a65.85 65.85 0 0 0 15.5 15.05c24.06 15.89 44.22 17 70 6.68C401.06 474.78 414 459.23 420 442c3.77-10.76 3.72-21.59 3.72-32.79V90.61h60c2.48 14.71 9.34 35.65 27.48 56.39a132.76 132.76 0 0 0 24.41 20.62c2.64 2.85 16.14 16.94 33.47 25.59a130.62 130.62 0 0 0 28.15 10.21z"></path> <path d="M187.89 450.39v.05l1.48 4.21c-.17-.49-.72-1.98-1.48-4.26z" fill="#69c9d0"></path> <path d="M298.9 278a148.37 148.37 0 0 0-42.22 25 162.84 162.84 0 0 0-35.52 43.5c-3.49 6-16.69 30.05-18.3 69.2-.91 22.19 5.75 45.1 8.92 54.64a.24.24 0 0 0 0 .07c2 5.44 9.81 24.68 22.6 41a157.5 157.5 0 0 0 11.93 13.52 166.64 166.64 0 0 1-35.88-33.64c-12.68-16.13-20.5-35.17-22.54-40.79a1 1 0 0 1 0-.12v-.07c-3.18-9.53-9.86-32.45-8.93-54.67 1.61-39.15 14.81-63.18 18.3-69.2a162.68 162.68 0 0 1 35.52-43.5 148.13 148.13 0 0 1 42.22-25 144.63 144.63 0 0 1 29.78-8.75 148 148 0 0 1 46.57-.69V267a141.61 141.61 0 0 0-52.45 11z" fill="#69c9d0"></path> <path d="M483.77 90.61h-60v318.61c0 11.2 0 22-3.72 32.79-6.06 17.22-18.95 32.77-36.13 39.67-25.79 10.36-45.95 9.21-70-6.68a65.85 65.85 0 0 1-15.54-15c20.49 10.93 38.83 10.74 61.55 1.62 17.17-6.9 30.08-22.45 36.12-39.68 3.78-10.76 3.73-21.59 3.73-32.78V70.49h82.85s-.93 7.92 1.14 20.12zM597.23 185.69v17.73a130.62 130.62 0 0 1-28.1-10.21c-17.33-8.65-30.83-22.74-33.47-25.59a93.69 93.69 0 0 0 9.52 5.48c21.07 10.52 41.82 13.66 52.05 12.59z" fill="#69c9d0"></path> <path d="M486.85 701.51a22.75 22.75 0 0 1-1-6.73v-.16a24.53 24.53 0 0 0 1 6.89zM536.44 694.62v.16a23.07 23.07 0 0 1-1 6.73 24.89 24.89 0 0 0 1-6.89z" fill="none"></path> <path d="M485.84 694.78a22.75 22.75 0 0 0 1 6.73 2.59 2.59 0 0 0 .14.45 25.28 25.28 0 0 0 24.16 17.8v25.59c-12.46 0-21.38.44-35-7.59-15.44-9.16-24.14-25.91-24.14-43.3 0-17.94 9.74-35.91 26.25-44.57 12-6.28 21.09-6.32 32.92-6.32v25.58a25.31 25.31 0 0 0-25.31 25.31z" fill="#69c9d0"></path> <path d="M536.64 694.78a23.07 23.07 0 0 1-1 6.73c0 .15-.09.3-.14.45a25.3 25.3 0 0 1-24.16 17.8v25.59c12.45 0 21.38.44 34.95-7.59 15.49-9.16 24.21-25.91 24.21-43.3 0-17.94-9.74-35.91-26.25-44.57-12-6.28-21.09-6.32-32.91-6.32v25.58a25.31 25.31 0 0 1 25.3 25.31z" fill="#ee1d52"></path> <path d="M119.51 620.36h93.71l-8.66 25.78H180v98.67h-30.13v-98.67h-30.36zm248.35 0v25.78h30.36v98.67h30.17v-98.67h24.52l8.66-25.78zm-134.25 29.38A14.6 14.6 0 1 0 219 635.15a14.59 14.59 0 0 0 14.61 14.59zM219 744.81h29.58v-84.75H219zM355 649h-34.6l-29.82 29.82v-58.36h-29.39l-.09 124.35h29.67v-32.4L300 704l28.8 40.77h31.72l-41.72-59.62zm283.77 36.17L674.94 649h-34.59l-29.83 29.82v-58.36h-29.38L581 744.81h29.68v-32.4L620 704l28.8 40.77h31.73zm-76.06 9.27c0 28.1-23.09 50.89-51.57 50.89s-51.57-22.79-51.57-50.89 23.09-50.89 51.57-50.89 51.57 22.8 51.57 50.91zm-26.27 0a25.3 25.3 0 1 0-25.3 25.3 25.3 25.3 0 0 0 25.3-25.28z"></path> </g></svg>
-					</a>
-					<a href="https://www.facebook.com/people/Madrid-Break/61581754283409/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H12V13H11C10.4477 13 10 12.5523 10 12C10 11.4477 10.4477 11 11 11H12V9.5C12 7.567 13.567 6 15.5 6H16.1C16.6523 6 17.1 6.44772 17.1 7C17.1 7.55228 16.6523 8 16.1 8H15.5C14.6716 8 14 8.67157 14 9.5V11H16.1C16.6523 11 17.1 11.4477 17.1 12C17.1 12.5523 16.6523 13 16.1 13H14V20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6Z" fill="#FFFFFF"></path> </g></svg>
-					</a>
-			</div>
-
-			<div class="footer__rights margin-top-small">
-				<p class="paragraph text-align-center" data-translate="section-footer-rights">@2025 All Rights Reserved.</p>
-			</div>
-
-		</footer>
-		
-	</body>
+</body>
 </html>
